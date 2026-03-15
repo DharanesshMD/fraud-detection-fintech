@@ -1,0 +1,9 @@
+bootstrap_servers: "localhost:9092"
+topic: "transactions"
+consumer_group: "fraud-detector"
+# cache config used by KafkaProcessor factory
+cache:
+  driver: "memory"  # change to "redis" in deployments that have redis available
+  host: "localhost"
+  port: 6379
+  db: 0

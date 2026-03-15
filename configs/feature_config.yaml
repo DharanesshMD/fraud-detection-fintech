@@ -1,0 +1,8 @@
+# Feature configuration used by feature_engineering
+velocity_windows:
+  1h: 3600
+  24h: 86400
+
+# TTLs for any cached aggregates (in seconds)
+ttls:
+  customer_agg_count: 2592000  # 30 days

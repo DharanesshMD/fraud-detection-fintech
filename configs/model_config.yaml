@@ -1,0 +1,6 @@
+# Model configuration template
+model:
+  name: dummy
+  path: models/dummy_model.joblib
+  type: "sklearn-placeholder"
+  version: "0.0.1"

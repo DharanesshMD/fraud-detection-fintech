@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  redpanda:
+    image: vectorized/redpanda:latest
+    command: ["redpanda", "start", "--overprovisioned", "--node-id", "0", "--check=false", "--smp=1", "--memory=1G", "--reserve-memory=0M"]
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+
+  redis:
+    image: redis:6.2
+    ports:
+      - "6379:6379"
+
+# Note: this compose file is a convenience skeleton for local integration testing.
+# It intentionally keeps settings minimal. Follow the README in this folder for
+# how to run consumer against Redpanda + Redis.
