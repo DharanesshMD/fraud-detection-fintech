@@ -1,14 +1,36 @@
-Minimal additions for Phase A: FastAPI prediction endpoint, dummy model, Dockerfile, and tests.
+# fraud-detection-fintech
 
-Run tests locally with:
+Minimal prototype for Phase A: a FastAPI prediction endpoint, a dummy model, a Dockerfile, and tests.
+
+## Features
+
+- FastAPI prediction endpoint
+- Example dummy model and inference code
+- Dockerfile and docker-compose for local deployment
+- Tests with pytest
+
+## Quickstart
+
+1. Install dependencies:
 
     pip install -r requirements.txt
+
+2. Run tests:
+
     pytest -q
 
-Run the API locally with:
+3. Run the API locally:
 
     uvicorn src.api.predict:app --reload
 
-Or use docker-compose:
+4. Run with Docker:
 
     docker compose up --build
+
+## Repository
+
+- Author: Dharanessh M D (https://github.com/DharanesshMD)
+
+## License
+
+MIT
